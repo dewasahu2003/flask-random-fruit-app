@@ -8,4 +8,6 @@ test:
 	python -m pytest -vv -cov=app test_app.py
 format:
 	black *.py
-all: install lint format test
+run:
+	python app.py
+all: install lint format test run
